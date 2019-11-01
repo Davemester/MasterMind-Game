@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MasterMind by DaveMester in OOP style</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>  
+    <div class="container">
+        <div class="header">
+            <h1>MasterMind</h1>
+        </div>
+        <div class="answer">
+            <span class="circle-answer">
+                <div id='answer0'></div>
+            </span>
+            <span class="circle-answer">
+                    <div id='answer1'></div>
+            </span>
+            <span class="circle-answer">
+                    <div id='answer2'></div>
+            </span>
+            <span class="circle-answer">
+                    <div id='answer3'></div>
+            </span>
+        </div>
+        <div class="start-game">
+            <button class="start-button" id="start"  >Start Game</button>
+        </div>
+        <div class="guesses" id='guess-row0'>
+            
+            <span class="circle-answer">
+                    <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="response-row">
+                       
+                    </span>
+            
+        </div>
+
+        <div class="guesses" id='guess-row1'>
+            
+            <span class="circle-answer">
+                    <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="response-row">
+                        
+                    </span>
+            
+        </div>
+        <div class="guesses" id='guess-row2'>
+            
+            <span class="circle-answer">
+                    <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="response-row">
+                     
+                    </span>
+            
+        </div>
+        <div class="guesses" id='guess-row3'>
+            
+            <span class="circle-answer">
+                    <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="response-row">
+                      
+                    </span>
+            
+        </div>
+        <div class="guesses" id='guess-row4'>
+            
+            <span class="circle-answer">
+                    <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="response-row">
+                    
+                    </span>
+            
+        </div>
+        <div class="guesses" id='guess-row5'>
+            
+            <span class="circle-answer">
+                    <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="response-row">
+                     
+                    </span>
+            
+        </div>
+        <div class="guesses" id='guess-row6'>
+            
+            <span class="circle-answer">
+                    <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="response-row">
+                     
+                    </span>
+            
+        </div>
+        <div class="guesses" id='guess-row7'>
+            
+            <span class="circle-answer">
+                    <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="response-row">
+                    
+                    </span>
+            
+        </div>
+        <div class="guesses" id='guess-row8'>
+            
+            <span class="circle-answer">
+                    <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="response-row">
+                      
+                    </span>
+            
+        </div>
+        <div class="guesses" id='guess-row9'>
+            
+            <span class="circle-answer">
+                    <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="circle-answer">
+                        <div></div>
+                </span>
+                <span class="response-row">
+                      
+                    </span>
+            
+        </div>
+        
+
+        <div class="colorpicker">
+                <span class=circle-answer>
+                    <div class="color-chose" id="red"></div>
+                </span>
+                <span class=circle-answer>
+                        <div class="color-chose" id="orange"></div>
+                    </span>
+                <span class=circle-answer>
+                    <div class="color-chose" id="yellow"></div>
+                </span>
+                <span class=circle-answer>
+                        <div class="color-chose" id="pink"></div>
+                    </span>
+                <span class=circle-answer>
+                        <div class="color-chose" id="purple"></div>
+                    </span>
+                <span class=circle-answer>
+                        <div class="color-chose" id="blue"></div>
+                    </span>
+                <span class=circle-answer>
+                        <div class="color-chose" id="green"></div>
+                    </span>
+                <span class=circle-answer>
+                        <div class="color-chose" id="grey"></div>
+                    </span>
+                <button class="submit-button">Submit</button>
+                <button class="clear-button">Clear</button>
+               
+            </div>
+
+    </div>
+    <div class="result-container">
+            
+    </div>
+    <div class="rules">
+                <h1><a href="rules.html" target="_blank">Játékszabály</a></h1>
+
+    </div>
+   <!--  <button onclick="showAnswer()">Show</button>  -->  
+    
+    <script type="module" src="game.js"></script> 
+</body>
+</html>
