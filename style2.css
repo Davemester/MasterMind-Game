@@ -8,8 +8,13 @@ body{
 .container{
   
     border: solid white 4px;
-    width: 50%;
-    margin: auto;
+    
+    margin-right: 20%;
+    margin-left:20%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+   
     
 }
 .header {
@@ -21,21 +26,19 @@ body{
 .answer{
 
     margin: auto;
-    width: 50%;
     border: solid white 4px;
     border-radius: 10px;
-    height: 30px;
-    padding:5px;
-    position: relative;
+    flex-direction: row;
+    padding-left: 30px;
+    padding-right:30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
    
-  
 }
-.answer>span{
-    margin-left: 30px;
-}
+
 .start-game{
     margin: auto;
-    width: 50%;
+    /* width: 50%; */
     text-align: center;
   
     height: 25px;
@@ -76,9 +79,9 @@ transition: all 0.4s ease 0s;
 }
 .circle-answer{
     
-    float: left;
+    float: left; 
     margin: auto;
-    padding: 4px 10px 4px 10px;
+    padding: 4px 5px 4px 5px;
 }
 .circle-answer>div{
     width: 20px;
@@ -106,22 +109,23 @@ transition: all 0.4s ease 0s;
 }
 
 .colorpicker{
-    /* border: solid rgb(0, 89, 255) 4px; */
     height: 50px;
-    
     box-shadow: 3px;
+    flex-direction: row;
 }
 .submit-button,.clear-button{
     margin-top: 14px;
     margin-right: 10px;
     margin-left:   10px;
+    
     color: #fff !important;
     text-decoration: none;
     background: #60a3bc;
     border: none;
     transition: all 0.4s ease 0s;
     border-radius:6px;
-    padding:6px; 
+    padding:8px;
+    float: right;
     
     
 
@@ -140,13 +144,8 @@ transition: all 0.4s ease 0s;
         transition: all 0.4s ease 0s;
         }
 
-
-
-
 .result-container{
-    
-    margin:auto;
-    width: 50%;
+   
     height: 40px;
     padding:3px;
     text-align: center;
@@ -154,8 +153,6 @@ transition: all 0.4s ease 0s;
 }
 .rules>h1{
     margin: auto;
-    width: 50%;
-    position: relative;
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
     color: white;
     text-align: center;
@@ -238,3 +235,4 @@ transition: all 0.4s ease 0s;
     border-radius: 20px;
     border: solid white 1px;
 }
+
